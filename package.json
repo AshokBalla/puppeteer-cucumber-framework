@@ -1,0 +1,17 @@
+{
+  "name": "puppeteer-cucumber-framework",
+  "version": "0.1.0",
+  "description": "Puppeteer + Cucumber.js BDD UI tests demo",
+  "scripts": {
+    "test": "cucumber-js --require 'features/**/*.js' --publish-quiet --format json:reports/cucumber.json && node scripts/generate-report.js",
+    "cucumber": "cucumber-js --require 'features/**/*.js'"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.8.0",
+    "puppeteer": "^20.10.0",
+    "cucumber-html-reporter": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
